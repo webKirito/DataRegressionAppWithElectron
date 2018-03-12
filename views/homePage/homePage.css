@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #778899;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-title, #openFileBtn {
+    background-color: white;
+    font-size: 20px;
+    margin: 5px;
+    border-radius: 15px;
+    transition:all .5s ease-in;
+    padding: 10px;
+    border: 5px solid white;
+}
+
+#openFileBtn{
+    padding-left: 15px;
+    outline: none;
+}
+
+#openFileBtn:hover {
+    border: 5px solid white;
+    color: white;
+    background-color: #778899;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.graphic-item {
+    height: 500px;
+    width: 500px;
+}
+
+.result {
+    
+}
+
+#text {
+    outline-color: #778899;
+}
+
+@media screen and (max-width: 769px) {
+    .main-container {
+        flex-wrap: wrap;
+    }
+    #text {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 910px) {
+    .graphic-item {
+        width: 700px;
+    }
+    #text {
+        width: 400px;
+    }
+}
